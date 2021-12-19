@@ -98,6 +98,13 @@ class Note extends FlxSprite
 					hitCausesMiss = true;
 				case 'No Animation':
 					noAnimation = true;
+				case 'Fuck Note':
+					ignoreNote = mustPress;
+					reloadNote('FUCK');
+					noteSplashTexture = 'FUCKnoteSplashes';
+					colorSwap.hue = 0;
+					colorSwap.saturation = 0;
+					colorSwap.brightness = 0;
 			}
 			noteType = value;
 		}

@@ -3488,6 +3488,8 @@ class PlayState extends MusicBeatState
 					note.destroy();
 				}
 				return;
+		case   'Fuck Note':
+		        health -= 1.00;
 			}
 
 			if (!note.isSustainNote)

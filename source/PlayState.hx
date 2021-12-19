@@ -2275,12 +2275,16 @@ class PlayState extends MusicBeatState
 						{
 							case 0:
 								animToPlay = 'singLEFT';
+								health -= 0,01;
 							case 1:
 								animToPlay = 'singDOWN';
+								health -= 0,01;
 							case 2:
 								animToPlay = 'singUP';
+								health -= 0,01;
 							case 3:
 								animToPlay = 'singRIGHT';
+								health -= 0,01;
 						}
 						if(daNote.noteType == 'GF Sing') {
 							gf.playAnim(animToPlay + altAnim, true);
@@ -3488,8 +3492,6 @@ class PlayState extends MusicBeatState
 					note.destroy();
 				}
 				return;
-		case   'Fuck Note':
-		        health -= 1.00;
 			}
 
 			if (!note.isSustainNote)
